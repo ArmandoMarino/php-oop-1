@@ -33,12 +33,15 @@ foreach ($movies as $movie){
 <body>
     <main>
         <!-- CARDS -->
-    <div id="app" class="container m-5">
-        <div class="row g-4">
+    <div id="app" class="container m-5 text-center">
+        <h1>Php Class Test</h1>
+        <div class="row g-4 justify-content-center mt-2">
             <?php foreach ($movies_objects as $movies_object) : ?>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-3">
                             <div class="my-card p-3 text-center">
-                                <figure><img class="img-fluid" src=<?= $movies_object->getPath() ?> alt=""></figure>
+                                <figure>
+                                    <img class="img-fluid" src=<?= $movies_object->getPath() ?> alt="<?= $movies_object->title ?>">
+                                </figure>
                                 <h5> <?= $movies_object->title ?> </h5>
                                 <p><?= $movies_object->lang ?></p>
                                 <h5><?= $movies_object->date ?></h5>
