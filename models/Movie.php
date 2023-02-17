@@ -20,6 +20,11 @@ class Movie
         $this->overview = $_overview;
         $this->poster = $_poster;
     }
+    
+    // Funzione per agganciare il path immagini
+    public function getPath(){
+        return 'https://image.tmdb.org/t/p/original'. $this->poster;
+    }
 }
 
 ?>
