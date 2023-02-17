@@ -12,7 +12,7 @@ foreach ($movies as $movie){
     $movies_objects[]= $movies_object;
 };
 
-var_dump($movies_objects);
+// var_dump($movies_objects);
 ?>
 
 
@@ -27,7 +27,19 @@ var_dump($movies_objects);
 </head>
 <body>
     <main>
-        
+    <div id="app" class="container m-5">
+        <div class="row g-4">
+            <?php foreach ($movies_objects as $movies_object) : ?>
+                    <div class="col-12 col-md-6 col-lg-4">
+                            <div class="my-card p-3 text-center">
+                                <figure><img class="img-fluid" src=<?= $movies_object->poster ?> alt=""></figure>
+                                <h5> <?= $movies_object->title ?> </h5>
+                                <p><?= $movies_object->lang ?></p>
+                                <h5><?= $movies_object->date ?></h5>
+                            </div>
+                    </div>
+            <?php endforeach; ?>
+        </div>
     </main>
 </body>
 </html>
