@@ -43,7 +43,7 @@ foreach ($movies as $movie){
                                     <img class="img-fluid" src=<?= $movies_object->getPath() ?> alt="<?= $movies_object->title ?>">
                                 </figure>
                                 <h5> <?= $movies_object->title ?> </h5>
-                                <p><?= $movies_object->lang ?></p>
+                                <img class="img-fluid" src=<?= $movies_object->getFlag() ?> alt="<?= $movies_object->title ?>">
                                 <h5><?= $movies_object->date ?></h5>
                             </div>
                     </div>

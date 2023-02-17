@@ -21,9 +21,16 @@ class Movie
         $this->poster = $_poster;
     }
     
-    // Funzione per agganciare il path immagini
+    // Funzione che restituisce il path immagini
     public function getPath(){
         return 'https://image.tmdb.org/t/p/original'. $this->poster;
+    }
+
+
+    // Funzione che restituisce una bandiera
+    public function getFlag(){
+        $url = "./img/$this->lang.png";
+        return $url;
     }
 }
 

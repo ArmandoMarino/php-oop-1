@@ -4,7 +4,7 @@ $movies = [
         'id' => 1,
         'title' => 'Cuando Sea Joven',
         'date' => '2022-09-14',
-        'lang' => 'es',
+        'lang' => 'it',
         'overview' => '70-year-old Malena gets a second chance at life when she magically turns into her 22-year-old self. Now, posing as \Maria\ to hide her true identity, she becomes the lead singer of her grandson\'s band and tries to recover her dream of singing, which she had to give up at some point.',
         'poster' => '/6gIJuFHh5Lj4dNaPG3TzIMl7L68.jpg',
     ],
